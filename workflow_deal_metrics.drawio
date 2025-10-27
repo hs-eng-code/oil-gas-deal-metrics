@@ -1,0 +1,163 @@
+<mxfile host="65bd71144e">
+    <diagram name="Page-1" id="5q501nyMJsZoOIYAZlTP">
+        <mxGraphModel dx="765" dy="969" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="1" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="24" value="" style="whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;opacity=10;" vertex="1" parent="1">
+                    <mxGeometry x="740" y="280" width="610" height="370" as="geometry"/>
+                </mxCell>
+                <mxCell id="22" value="" style="whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;opacity=10;" vertex="1" parent="1">
+                    <mxGeometry x="60" y="280" width="610" height="420" as="geometry"/>
+                </mxCell>
+                <mxCell id="oK7qOMworF0H7mbEmCq7-2" value="&lt;b&gt;STEP 1: Well Data &amp;amp; Metadata&lt;/b&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;align=left;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+                    <mxGeometry x="70" y="310" width="200" height="130" as="geometry"/>
+                </mxCell>
+                <mxCell id="oK7qOMworF0H7mbEmCq7-3" value="well_id" style="text;strokeColor=default;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="oK7qOMworF0H7mbEmCq7-2" vertex="1">
+                    <mxGeometry y="30" width="200" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="oK7qOMworF0H7mbEmCq7-4" value="basin_id" style="text;strokeColor=default;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="oK7qOMworF0H7mbEmCq7-2" vertex="1">
+                    <mxGeometry y="50" width="200" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="oK7qOMworF0H7mbEmCq7-5" value="months_on" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="oK7qOMworF0H7mbEmCq7-2" vertex="1">
+                    <mxGeometry y="70" width="200" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="oK7qOMworF0H7mbEmCq7-7" value="p50_pv" style="text;strokeColor=default;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="oK7qOMworF0H7mbEmCq7-2" vertex="1">
+                    <mxGeometry y="90" width="200" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="oK7qOMworF0H7mbEmCq7-8" value="posterior_draws (PV or production)" style="text;strokeColor=default;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="oK7qOMworF0H7mbEmCq7-2" vertex="1">
+                    <mxGeometry y="110" width="200" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="oK7qOMworF0H7mbEmCq7-9" value="&lt;b&gt;STEP 2: Construct Perturbed PV Matrices from Price and Production for Finite-Difference Sensitivities&lt;/b&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=60;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;align=left;strokeColor=#82b366;verticalAlign=middle;fontFamily=Helvetica;fontSize=12;fontColor=default;fillColor=#d5e8d4;" parent="1" vertex="1">
+                    <mxGeometry x="280" y="310" width="170" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="oK7qOMworF0H7mbEmCq7-10" value="dPV_dProd" style="text;strokeColor=default;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;fontStyle=0;horizontal=1;" parent="oK7qOMworF0H7mbEmCq7-9" vertex="1">
+                    <mxGeometry y="60" width="170" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="oK7qOMworF0H7mbEmCq7-11" value="dPV_dPrice" style="text;strokeColor=default;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontFamily=Helvetica;fontSize=12;fontColor=default;fontStyle=0;horizontal=1;" parent="oK7qOMworF0H7mbEmCq7-9" vertex="1">
+                    <mxGeometry y="80" width="170" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="oK7qOMworF0H7mbEmCq7-15" value="&lt;b&gt;STEP 3: Bootstrap Per-Well Features (k)&lt;/b&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;align=left;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+                    <mxGeometry x="460" y="310" width="200" height="130" as="geometry"/>
+                </mxCell>
+                <mxCell id="oK7qOMworF0H7mbEmCq7-16" value="CV_res" style="text;strokeColor=default;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="oK7qOMworF0H7mbEmCq7-15" vertex="1">
+                    <mxGeometry y="30" width="200" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="oK7qOMworF0H7mbEmCq7-17" value="sigma_decline (std of declines)" style="text;strokeColor=default;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="oK7qOMworF0H7mbEmCq7-15" vertex="1">
+                    <mxGeometry y="50" width="200" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="oK7qOMworF0H7mbEmCq7-18" value="dPV_dProd" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="oK7qOMworF0H7mbEmCq7-15" vertex="1">
+                    <mxGeometry y="70" width="200" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="oK7qOMworF0H7mbEmCq7-19" value="dPV_dPrice" style="text;strokeColor=default;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="oK7qOMworF0H7mbEmCq7-15" vertex="1">
+                    <mxGeometry y="90" width="200" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="oK7qOMworF0H7mbEmCq7-20" value="months_on (-log(months_on))" style="text;strokeColor=default;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="oK7qOMworF0H7mbEmCq7-15" vertex="1">
+                    <mxGeometry y="110" width="200" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="oK7qOMworF0H7mbEmCq7-21" value="&lt;b&gt;STEP 4: Global Feature References (mu, sigma) for Each Feature&lt;/b&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;align=left;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+                    <mxGeometry x="70" y="450" width="160" height="90" as="geometry"/>
+                </mxCell>
+                <mxCell id="oK7qOMworF0H7mbEmCq7-22" value="mu = mean(feature_draws)" style="text;strokeColor=default;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="oK7qOMworF0H7mbEmCq7-21" vertex="1">
+                    <mxGeometry y="50" width="160" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="oK7qOMworF0H7mbEmCq7-23" value="sigma = std(feature_draws)" style="text;strokeColor=default;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="oK7qOMworF0H7mbEmCq7-21" vertex="1">
+                    <mxGeometry y="70" width="160" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="oK7qOMworF0H7mbEmCq7-27" value="&lt;b&gt;STEP 5b: Compute WRS_raw draws&lt;/b&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=20;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;align=left;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+                    <mxGeometry x="410" y="450" width="250" height="150" as="geometry"/>
+                </mxCell>
+                <mxCell id="oK7qOMworF0H7mbEmCq7-28" value="$$WRS_{raw_j}(I) = \sum_k(v_k \times Z_{k_j}(i))$$" style="text;strokeColor=default;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="oK7qOMworF0H7mbEmCq7-27" vertex="1">
+                    <mxGeometry y="20" width="250" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="oK7qOMworF0H7mbEmCq7-29" value="$$v_k = \text{weight of feature} Z_k$$" style="text;strokeColor=default;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="oK7qOMworF0H7mbEmCq7-27" vertex="1">
+                    <mxGeometry y="70" width="250" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="oK7qOMworF0H7mbEmCq7-36" value="$$\sum_k(v_k)=1$$" style="text;strokeColor=default;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="oK7qOMworF0H7mbEmCq7-27" vertex="1">
+                    <mxGeometry y="100" width="250" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="oK7qOMworF0H7mbEmCq7-33" value="&lt;b&gt;STEP 5a: Standardize Wells-Level Features&lt;/b&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=40;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;align=left;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+                    <mxGeometry x="240" y="450" width="160" height="60" as="geometry"/>
+                </mxCell>
+                <mxCell id="oK7qOMworF0H7mbEmCq7-34" value="Z_k = (k - mu_k) / sigma_k" style="text;strokeColor=default;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="oK7qOMworF0H7mbEmCq7-33" vertex="1">
+                    <mxGeometry y="40" width="160" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="oK7qOMworF0H7mbEmCq7-37" value="&lt;b&gt;STEP 6: Scale WRS (0-100) &amp;amp; WRS_median&lt;/b&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;align=left;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+                    <mxGeometry x="70" y="550" width="160" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="oK7qOMworF0H7mbEmCq7-38" value="wrs_scaled = 100* (per_well_wrs_draws - wrs_raw_min) / (wrs_raw_max - wrs_raw_min)" style="text;strokeColor=default;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="oK7qOMworF0H7mbEmCq7-37" vertex="1">
+                    <mxGeometry y="30" width="160" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="oK7qOMworF0H7mbEmCq7-39" value="&lt;b&gt;STEP 7: Compute P_high Per Well&lt;/b&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;align=left;fillColor=#d5e8d4;strokeColor=#82b366;" parent="1" vertex="1">
+                    <mxGeometry x="240" y="550" width="160" height="140" as="geometry"/>
+                </mxCell>
+                <mxCell id="oK7qOMworF0H7mbEmCq7-40" value="Fraction of draws where the well&#39;s risk metric exceeds the global threshold (probability). Alternatively, keep continuous P_high without threshold to avoid binarization" style="text;strokeColor=default;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="oK7qOMworF0H7mbEmCq7-39" vertex="1">
+                    <mxGeometry y="30" width="160" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="oK7qOMworF0H7mbEmCq7-41" value="&lt;b&gt;STEP 8: Deal-Level Statistics and MCVaR for Each Deal&lt;/b&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;align=left;fillColor=#dae8fc;strokeColor=#6c8ebf;" parent="1" vertex="1">
+                    <mxGeometry x="750" y="310" width="200" height="170" as="geometry"/>
+                </mxCell>
+                <mxCell id="oK7qOMworF0H7mbEmCq7-42" value="Slice the joint PV_draws matrix to preserve dependence for deal-level metrics" style="text;strokeColor=default;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="oK7qOMworF0H7mbEmCq7-41" vertex="1">
+                    <mxGeometry y="30" width="200" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="oK7qOMworF0H7mbEmCq7-43" value="Compute P50, Var%, Var_q, CVaR_q, rho_eff, ES_gap" style="text;strokeColor=default;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="oK7qOMworF0H7mbEmCq7-41" vertex="1">
+                    <mxGeometry y="80" width="200" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="oK7qOMworF0H7mbEmCq7-45" value="Compute MCVaR per well by recomputing CVaR with that well removed" style="text;strokeColor=default;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" parent="oK7qOMworF0H7mbEmCq7-41" vertex="1">
+                    <mxGeometry y="120" width="200" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="2" value="&lt;b&gt;STEP 10a: Standardize Deal -Level Features&lt;/b&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;align=left;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+                    <mxGeometry x="1200" y="310" width="140" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="Z_m = (m - mu_m) / sigma_m" style="text;strokeColor=default;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="2">
+                    <mxGeometry y="30" width="140" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="&lt;b&gt;STEP 9: Deal-Level Features for Each Deal and Global Feature References&lt;/b&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;align=left;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+                    <mxGeometry x="961" y="310" width="230" height="120" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;Compute per-deal metrics and collect deal-level raw features (m: Var%, log_size, hr_share, es_gap, rho_eff)&lt;/span&gt;" style="text;strokeColor=default;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="7">
+                    <mxGeometry y="30" width="230" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" value="&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;mu = mean(deal_features)&lt;/span&gt;" style="text;strokeColor=default;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="7">
+                    <mxGeometry y="80" width="230" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" value="&lt;span style=&quot;color: rgb(0, 0, 0);&quot;&gt;sigma = sigma(deal_features)&lt;/span&gt;" style="text;strokeColor=default;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="7">
+                    <mxGeometry y="100" width="230" height="20" as="geometry"/>
+                </mxCell>
+                <mxCell id="14" value="&lt;b&gt;STEP 10b: Compute DRS_raw draws&lt;/b&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=20;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;align=left;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+                    <mxGeometry x="750" y="490" width="240" height="150" as="geometry"/>
+                </mxCell>
+                <mxCell id="15" value="$$DRS_{raw}(deal) = \sum_m(w_m \times Z_{m}(deal))$$" style="text;strokeColor=default;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="14">
+                    <mxGeometry y="20" width="240" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="16" value="$$w_m = \text{weight of feature} Z_m$$" style="text;strokeColor=default;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="14">
+                    <mxGeometry y="70" width="240" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="17" value="$$\sum_m(w_m)=1$$" style="text;strokeColor=default;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="14">
+                    <mxGeometry y="100" width="240" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="18" value="&lt;b&gt;STEP 11a: Scale DRS (0-100)&lt;/b&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;align=left;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+                    <mxGeometry x="1000" y="490" width="150" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="19" value="drs_100 = 100* (drs_raw - drs_raw_min) / (drs_raw_max - drs_raw_min)" style="text;strokeColor=default;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="18">
+                    <mxGeometry y="30" width="150" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="20" value="&lt;b&gt;STEP 11b: Map Scaled DRS to P_rec&lt;/b&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;align=left;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+                    <mxGeometry x="1160" y="490" width="180" height="140" as="geometry"/>
+                </mxCell>
+                <mxCell id="21" value="$$P_{rec}(DRS_{scaled})$$ = p50 + (p_max - p50) $$\times \left[ \frac{1}{(1 + e^{-\gamma\times (DRS_{scaled} - \theta)})} \right]$$" style="text;strokeColor=default;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="20">
+                    <mxGeometry y="30" width="180" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="25" value="&lt;b&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;GLOBAL DEALS AGGREGATION-LEVEL&lt;/font&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="890" y="280" width="310" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="26" value="&lt;b&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;EACH DEAL-LEVEL WELL&lt;/font&gt;&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="262.5" y="280" width="205" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="34" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.57;entryDx=0;entryDy=0;entryPerimeter=0;fillColor=#f5f5f5;strokeColor=#999999;strokeWidth=3;" edge="1" parent="1" source="22" target="24">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
