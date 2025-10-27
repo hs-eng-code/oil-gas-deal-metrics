@@ -15,7 +15,7 @@ python run_demo.py
 Notes:
 - Replace synthetic draws with your posterior draw CSVs and wire the real global refs for production use.
 
-Workflow Analysis
+# Workflow Analysis
 
 ## Purpose and Context
 - `run_demo.py` stitches together the 13-step canonical workflow described in the inline header comments to exercise the modular deal metrics package on synthetic data.
