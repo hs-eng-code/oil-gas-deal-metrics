@@ -1,6 +1,6 @@
 # Deal Metrics Framework
 
-This folder contains a modular Python demo implementing core ideas from the Deal Risk Score (DRS) and Well Risk Score (WRS) guides.
+This folder contains a modular Python demo for evaluating oil & gas deals using Deal Risk Score (DRS).
 
 Files added:
 - `deal_metrics_framework/:` Small package with modules: preprocessing, well_score, portfolio, deal_score, utils, deal_metrics_viz.
